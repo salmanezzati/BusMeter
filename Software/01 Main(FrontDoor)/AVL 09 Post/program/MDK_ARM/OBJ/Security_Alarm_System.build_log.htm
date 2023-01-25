@@ -1,0 +1,582 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: salman ezzati, sam, LIC=EPP74-FKDQY-66JQS-LCJDT-L52IX-X0TU9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\Bus meter\Software\01 Main\AVL 09 Post\program\MDK_ARM\STM32F4.uvprojx
+Project File Date:  03/26/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+assembling startup_stm32f4xx.s...
+compiling delay.c...
+compiling usart.c...
+compiling main.c...
+..\inc\Date_Convert.h(53): warning:  #550-D: variable "j_np"  was set but never used
+            unsigned long j_np;
+..\src\main.c(313): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+      sprintf(Buffer_1,"rc=%u FR_%s\n\r", (UINT)rc, str);
+..\src\main.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (URL_1,"http://sebazar.ir/sebApi/dataDastgah/insertData.php?data=");
+..\src\main.c(344): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (URL_2,"http://sebazar.ir/Das/insertT2.php?data=");
+..\src\main.c(630): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  				if(strtold(Satellites_Used,NULL) >= 5)
+..\src\main.c(633): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Date,"%02i%02i%02i", (Sh_RTC_Date.RTC_Year % 100)/*-1300*/, Sh_RTC_Date.RTC_Month, Sh_RTC_Date.RTC_Date);
+..\src\main.c(634): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Time,"%02i%02i%02i", RTC_TimeStruct.RTC_Hours, RTC_TimeStruct.RTC_Minutes, RTC_TimeStruct.RTC_Seconds);
+..\src\main.c(638): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Buffer_1, "%06d%s%s%s%s%s%s%s", Location_data_counter, Device_ID, Date, Time, Latitude, Longitude, Speed, Course);
+..\src\main.c(646): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  					}while(strstr(Buffer_1, Buffer_2) == '\0');
+..\src\main.c(646): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  					}while(strstr(Buffer_1, Buffer_2) == '\0');
+..\src\main.c(653): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Buffer_1, "%i", Location_data_counter);
+..\src\main.c(657): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Buffer_1, "%i", Location_write_block);
+..\src\main.c(684): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				strcpy (Buffer_1, URL_1);
+..\src\main.c(684): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  				strcpy (Buffer_1, URL_1);
+..\src\main.c(740): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(L_Tx_1, "id_1=%s&device_id=%s&date=%s&time_1=%s&latitude_1=%s&longitude_1=%s&speed_1=%s&course_1=%s", Buff_ID, Buff_Device_ID, Buff_Date, Buff_Time, Buff_Latitude, Buff_Longitude, Buff_Speed, Buff_Course);
+..\src\main.c(745): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "&id_%d=%s&time_%d=%s&latitude_%d=%s&longitude_%d=%s&speed_%d=%s&course_%d=%s", (j+1), Buff_ID, (j+1), Buff_Time, (j+1), Buff_Latitude, (j+1), Buff_Longitude, (j+1), Buff_Speed, (j+1), Buff_Course);
+..\src\main.c(746): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						strcat (L_Tx_1,Buffer_2);
+..\src\main.c(746): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  						strcat (L_Tx_1,Buffer_2);
+..\src\main.c(751): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "&id_%d=%s&time_%d=%s&latitude_%d=%s&longitude_%d=%s&speed_%d=%s&course_%d=%s", (j+1), Buff_ID, (j+1), Buff_Time, (j+1), Buff_Latitude, (j+1), Buff_Longitude, (j+1), Buff_Speed, (j+1), Buff_Course);
+..\src\main.c(752): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						strcat (L_Tx_2,Buffer_2);
+..\src\main.c(752): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  						strcat (L_Tx_2,Buffer_2);
+..\src\main.c(757): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "&id_%d=%s&time_%d=%s&latitude_%d=%s&longitude_%d=%s&speed_%d=%s&course_%d=%s", (j+1), Buff_ID, (j+1), Buff_Time, (j+1), Buff_Latitude, (j+1), Buff_Longitude, (j+1), Buff_Speed, (j+1), Buff_Course);
+..\src\main.c(758): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						strcat (L_Tx_3,Buffer_2);
+..\src\main.c(758): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  						strcat (L_Tx_3,Buffer_2);
+..\src\main.c(763): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "&id_%d=%s&time_%d=%s&latitude_%d=%s&longitude_%d=%s&speed_%d=%s&course_%d=%s", (j+1), Buff_ID, (j+1), Buff_Time, (j+1), Buff_Latitude, (j+1), Buff_Longitude, (j+1), Buff_Speed, (j+1), Buff_Course);
+..\src\main.c(977): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  					unicode2ascii((char *)Low_cash, Buffer_1);
+..\src\main.c(980): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  					myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\main.c(982): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  					LCD_MyShow_Image(142,130,Error_icon,RED,Good_White);
+..\src\main.c(1237): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 0);
+..\src\main.c(1242): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 5000);
+..\src\main.c(1247): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 0);
+..\src\main.c(1252): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 35000);
+..\src\main.c(1257): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 30000);
+..\src\main.c(1262): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 5000);
+..\src\main.c(1267): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 60000);
+..\src\main.c(1272): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 35000);
+..\src\main.c(1278): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", Daily_operation_amount);
+..\src\main.c(1283): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", Front_door_card);
+..\src\main.c(1288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", Back_door_card);
+..\src\main.c(1292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%03i", Location_data_time);
+..\src\main.c(1296): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%04i", Data_time);
+..\src\main.c(1310): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Device_ID, Buffer_2);
+..\src\main.c(1310): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Device_ID, Buffer_2);
+..\src\main.c(1315): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Line_Code, Buffer_2);
+..\src\main.c(1315): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Line_Code, Buffer_2);
+..\src\main.c(1320): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Line_Name, Buffer_2);
+..\src\main.c(1320): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Line_Name, Buffer_2);
+..\src\main.c(1325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (URL_1, Buffer_2);
+..\src\main.c(1325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (URL_1, Buffer_2);
+..\src\main.c(1330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (URL_2, Buffer_2);
+..\src\main.c(1330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (URL_2, Buffer_2);
+..\src\main.c(1335): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_data_counter = strtold(Buffer_2,NULL);
+..\src\main.c(1340): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_write_block = strtold(Buffer_2,NULL);
+..\src\main.c(1345): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_write_block_end = strtold(Buffer_2,NULL);
+..\src\main.c(1350): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_send_block = strtold(Buffer_2,NULL);
+..\src\main.c(1355): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Financial_data_counter = strtold(Buffer_2,NULL);
+..\src\main.c(1360): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Financial_write_block = strtold(Buffer_2,NULL);
+..\src\main.c(1365): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Financial_write_block_end = strtold(Buffer_2,NULL);
+..\src\main.c(1370): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Financial_send_block = strtold(Buffer_2,NULL);
+..\src\main.c(1375): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	if(strtold(Buffer_2,NULL) > 0)
+..\src\main.c(1376): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  		Trip_price = strtold(Buffer_2,NULL);
+..\src\main.c(1384): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Temp = strtold(Buffer_2,NULL);
+..\src\main.c(1398): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Temp = strtold(Buffer_2,NULL);
+..\src\main.c(1408): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Phone_Num_2, Buffer_2);
+..\src\main.c(1408): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Phone_Num_2, Buffer_2);
+..\src\main.c(1413): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Current_month = strtold(Buffer_2,NULL);
+..\src\main.c(1418): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Current_day = strtold(Buffer_2,NULL);
+..\src\main.c(1423): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Daily_operation_amount = strtold(Buffer_2,NULL);
+..\src\main.c(1428): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Front_door_card = strtold(Buffer_2,NULL);
+..\src\main.c(1433): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Back_door_card = strtold(Buffer_2,NULL);
+..\src\main.c(1440): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(248,213,Location_icon,Brand_Blue,Good_White);
+..\src\main.c(1444): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(248,213,Location_icon,LGRAY,Good_White);
+..\src\main.c(1452): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(10,213,Massege_icon,Brand_Blue,Good_White);
+..\src\main.c(1456): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(10,213,Massege_icon,LGRAY,Good_White);
+..\src\main.c(1464): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(55,213,Danger_icon,Brand_Blue,Good_White);
+..\src\main.c(1468): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(55,213,Danger_icon,LGRAY,Good_White);
+..\src\main.c(1475): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(90,213,Data_icon_up,Brand_Blue,Good_White);
+..\src\main.c(1479): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(90,213,Data_icon_up,LGRAY,Good_White);
+..\src\main.c(1486): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(104,213,Data_icon_down,Brand_Blue,Good_White);
+..\src\main.c(1490): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          LCD_MyShow_Image(104,213,Data_icon_down,LGRAY,Good_White);
+..\src\main.c(1492): warning:  #1-D: last line of file ends without a newline
+  }
+..\src\main.c(300): warning:  #177-D: function "fault_err"  was declared but never referenced
+  static void fault_err (FRESULT rc)
+..\src\main.c: 109 warnings, 0 errors
+compiling lcd.c...
+..\inc\font.h(544): warning:  #1-D: last line of file ends without a newline
+      
+..\src\lcd.c(1498): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(x1 < 0) 
+..\src\lcd.c(1500): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(y1 < 0) 
+..\src\lcd.c(1561): warning:  #550-D: variable "font_pixel"  was set but never used
+      unsigned int font_pixel, font_Height, font_Width, i, j;
+..\src\lcd.c(2417): warning:  #177-D: variable "en_end"  was declared but never referenced
+  	char en_end=0;
+..\src\lcd.c: 5 warnings, 0 errors
+compiling stm32f4xx_it.c...
+..\src\stm32f4xx_it.c(160): warning:  #223-D: function "SD_ProcessIRQSrc" declared implicitly
+    SD_ProcessIRQSrc();
+..\src\stm32f4xx_it.c(172): warning:  #223-D: function "SD_ProcessDMAIRQ" declared implicitly
+    SD_ProcessDMAIRQ();
+..\src\stm32f4xx_it.c: 2 warnings, 0 errors
+compiling system_stm32f4xx.c...
+compiling diskio.c...
+compiling exti.c...
+compiling ff.c...
+compiling gpio.c...
+compiling rtc.c...
+compiling sd_bmp.c...
+..\src\sd_bmp.c(236): warning:  #940-D: missing return statement at end of non-void function "Bmp_Show" 
+  }  
+..\src\sd_bmp.c(126): warning:  #177-D: variable "Code"  was declared but never referenced
+      unsigned int Code[10];
+..\src\sd_bmp.c: 2 warnings, 0 errors
+compiling stm32f4_sdio_low_level_init.c...
+compiling stm32f4_sdio_sd.c...
+compiling tim.c...
+..\src\tim.c(168): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%03i", Front_door_card);
+..\src\tim.c(171): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Front_door, Buffer_1);
+..\src\tim.c(174): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%03i", Back_door_card);
+..\src\tim.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Back_door, Buffer_1);
+..\src\tim.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%06i", Daily_operation_amount);			
+..\src\tim.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Daily_operation, Buffer_1);
+..\src\tim.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(207): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)No_new_massage, Buffer_1);
+..\src\tim.c(210): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(260): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%03i", Front_door_card);
+..\src\tim.c(263): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Front_door, Buffer_1);
+..\src\tim.c(266): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(269): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%03i", Back_door_card);
+..\src\tim.c(272): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Back_door, Buffer_1);
+..\src\tim.c(275): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(281): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Line_name, Buffer_1);
+..\src\tim.c(282): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(285): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Line_Name, Buffer_1);
+..\src\tim.c(286): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(289): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Line_fare, Buffer_1);
+..\src\tim.c(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%d", Trip_price);
+..\src\tim.c(330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%02i:%02i", RTC_TimeStruct.RTC_Hours, RTC_TimeStruct.RTC_Minutes/*, RTC_TimeStruct.RTC_Seconds*/);
+..\src\tim.c(333): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%02i/%02i/%02i", Sh_RTC_Date.RTC_Year/*-1300*/, Sh_RTC_Date.RTC_Month, Sh_RTC_Date.RTC_Date);
+..\src\tim.c(341): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Sun, Buffer_1);
+..\src\tim.c(346): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Mon, Buffer_1);
+..\src\tim.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Tue, Buffer_1);
+..\src\tim.c(356): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Wed, Buffer_1);
+..\src\tim.c(361): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Thu, Buffer_1);
+..\src\tim.c(366): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Fri, Buffer_1);
+..\src\tim.c(371): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Sat, Buffer_1);
+..\src\tim.c(376): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\tim.c(413): warning:  #223-D: function "M2Sh" declared implicitly
+          M2Sh(&Sh_RTC_Date.RTC_Year, &Sh_RTC_Date.RTC_Month, &Sh_RTC_Date.RTC_Date, (int) 2000+M_RTC_DateStruct.RTC_Year, (int) M_RTC_DateStruct.RTC_Month, (int) M_RTC_DateStruct.RTC_Date);
+..\src\tim.c(420): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Current_day);
+..\src\tim.c(425): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Daily_operation_amount);
+..\src\tim.c(430): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Front_door_card);
+..\src\tim.c(435): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Back_door_card);
+..\src\tim.c(443): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Current_month);
+..\src\tim.c(448): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Location_write_block_end);
+..\src\tim.c(453): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Financial_write_block_end);
+..\src\tim.c(458): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Location_write_block);
+..\src\tim.c(463): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Location_data_counter);
+..\src\tim.c(468): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Financial_write_block);
+..\src\tim.c(473): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1, "%i", Financial_data_counter);
+..\src\tim.c(765): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  										unicode2ascii((char *)Successful_peyment, Buffer_1);
+..\src\tim.c(768): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  										myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\tim.c(770): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  										LCD_MyShow_Image(142,150,Ok_icon,GREEN,Good_White);
+..\src\tim.c(772): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%05d", Value_1);	
+..\src\tim.c(778): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Date,"%02i%02i%02i", (Sh_RTC_Date.RTC_Year % 100)/*-1300*/, Sh_RTC_Date.RTC_Month, Sh_RTC_Date.RTC_Date);
+..\src\tim.c(779): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Time,"%02i%02i%02i", RTC_TimeStruct.RTC_Hours, RTC_TimeStruct.RTC_Minutes, RTC_TimeStruct.RTC_Seconds);
+..\src\tim.c(782): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%05d%s%s%s%02x%02x%02x%02x%02x%04d%05d", Financial_data_counter, Device_ID, Date, Time, Card_ID[0], Card_ID[1], Card_ID[2], Card_ID[3], Card_ID[4], Trip_price, Value_1);
+..\src\tim.c(792): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  										}while(strstr(Buffer_1, Buffer_2) == '\0');
+..\src\tim.c(792): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  										}while(strstr(Buffer_1, Buffer_2) == '\0');
+..\src\tim.c(799): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%i", Financial_data_counter);
+..\src\tim.c(803): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%i", Financial_write_block);
+..\src\tim.c(808): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%i", Daily_operation_amount);
+..\src\tim.c(813): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_1, "%i", Front_door_card);
+..\src\tim.c(824): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  								unicode2ascii((char *)Low_money, Buffer_1);
+..\src\tim.c(827): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  								myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\tim.c(829): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  								LCD_MyShow_Image(142,150,Error_icon,RED,Good_White);
+..\src\tim.c(831): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  								sprintf(Buffer_1, "%05d", Value_1);	
+..\src\tim.c(875): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  					unicode2ascii((char *)Undefined_card, Buffer_1);
+..\src\tim.c(876): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  					myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\tim.c(878): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  					LCD_MyShow_Image(142,150,Error_icon,RED,Good_White);
+..\src\tim.c(950): warning:  #177-D: variable "TimerPeriod"  was declared but never referenced
+      uint16_t TimerPeriod = 0;
+..\src\tim.c(955): warning:  #177-D: variable "NVIC_InitStructure"  was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\src\tim.c(1109): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					strcpy(Purchase_price, Key_str);
+..\src\tim.c(1109): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					strcpy(Purchase_price, Key_str);
+..\src\tim.c(1136): warning:  #940-D: missing return statement at end of non-void function "Purchase_price_Get" 
+  }
+..\src\tim.c(1221): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					strcpy(Card_password, Key_str);
+..\src\tim.c(1221): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					strcpy(Card_password, Key_str);
+..\src\tim.c(1249): warning:  #940-D: missing return statement at end of non-void function "Card_Pass_Get" 
+  }
+..\src\tim.c: 74 warnings, 0 errors
+compiling sim808.c...
+..\src\sim808.c(143): warning:  #177-D: variable "i"  was declared but never referenced
+  	unsigned char i;
+..\src\sim808.c(222): warning:  #177-D: variable "Buffer"  was declared but never referenced
+      unsigned char *Buffer;
+..\src\sim808.c(554): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  			GSM_Signal_quality = strtold(Buffer,NULL);
+..\src\sim808.c(620): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+      strcpy (Buffer_tx,"AT+CMGS=\"");
+..\src\sim808.c(621): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcat (Buffer_tx,Phone_num);
+..\src\sim808.c(621): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcat (Buffer_tx,Phone_num);
+..\src\sim808.c(622): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcat (Buffer_tx,"\"\r");
+..\src\sim808.c(639): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  		sprintf(Buffer_1, "Message Sent");
+..\src\sim808.c(725): warning:  #192-D: unrecognized character escape sequence
+  	while (*++Buffer != '\,')   
+..\src\sim808.c(738): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  	S1 = strcmp(Phone_Num_1, SMS_PhoneNumber);
+..\src\sim808.c(738): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  	S1 = strcmp(Phone_Num_1, SMS_PhoneNumber);
+..\src\sim808.c(739): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  	S2 = strcmp(Phone_Num_2, SMS_PhoneNumber);
+..\src\sim808.c(739): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  	S2 = strcmp(Phone_Num_2, SMS_PhoneNumber);
+..\src\sim808.c(807): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Line_name_change, Buffer_1);
+..\src\sim808.c(808): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\sim808.c(823): warning:  #192-D: unrecognized character escape sequence
+  			while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(830): warning:  #192-D: unrecognized character escape sequence
+  			while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(835): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  			if(strtold(Command,NULL) == 0)
+..\src\sim808.c(840): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(847): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(854): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(861): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<6;i++)
+..\src\sim808.c(868): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<4;i++)
+..\src\sim808.c(875): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<3;i++)
+..\src\sim808.c(882): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<3;i++)
+..\src\sim808.c(889): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<11;i++)
+..\src\sim808.c(895): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				S1 = strcmp(Password, SMS_Password);
+..\src\sim808.c(895): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				S1 = strcmp(Password, SMS_Password);
+..\src\sim808.c(898): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					if(strtold(Reset_Status,NULL) == 1)
+..\src\sim808.c(901): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					strcpy(Device_ID, Temp_Device_ID);
+..\src\sim808.c(901): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					strcpy(Device_ID, Temp_Device_ID);
+..\src\sim808.c(906): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					Trip_price = strtold(Trip_Price,NULL);
+..\src\sim808.c(909): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					Data_time = strtold(Data_Time,NULL);
+..\src\sim808.c(912): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					Location_data_time = strtold(Location_Data_Time,NULL);
+..\src\sim808.c(915): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  					if(strtold(Temp_Phone_Num,NULL) != 0)
+..\src\sim808.c(917): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						strcpy(Phone_Num_2, Temp_Phone_Num);
+..\src\sim808.c(917): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  						strcpy(Phone_Num_2, Temp_Phone_Num);
+..\src\sim808.c(927): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  					unicode2ascii((char *)Settings_done, Buffer_1);
+..\src\sim808.c(928): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  					myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\sim808.c(942): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  			else if(strtold(Command,NULL) == 1)
+..\src\sim808.c(947): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<11;i++)
+..\src\sim808.c(954): warning:  #192-D: unrecognized character escape sequence
+  				while (!(*Buffer == '\"' && *(Buffer+1) == '\,'))//for(i=0;i<11;i++)
+..\src\sim808.c(966): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)URL_settings_done, Buffer_1);
+..\src\sim808.c(967): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 2);
+..\src\sim808.c(1062): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+      S = strstr(Buffer_rx,str);
+..\src\sim808.c(1073): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  		S = strstr(Buffer_rx,str);			
+..\src\sim808.c(1086): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+      S = strstr(Buffer_rx,str);
+..\src\sim808.c(1115): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	snprintf(Buffer_tx, sizeof(Buffer_tx), "AT+SAPBR=3,1,\"APN\",\"%s\"\r", apn);
+..\src\sim808.c(1174): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			snprintf(Buffer_tx, sizeof(Buffer_tx), "AT+HTTPPARA=\"URL\",\"%s\"\r", data_str);
+..\src\sim808.c(1193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "  +HTTPREAD: 28  %05s:true ", Sending_id[0]);
+..\src\sim808.c(1207): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_2, "  +HTTPREAD: 48  %02x%02x%02x%02x%02x:%06s:%s:  OK", Card_ID[0], Card_ID[1], Card_ID[2], Card_ID[3], Card_ID[4], Device_ID, Date);
+..\src\sim808.c(1161): warning:  #177-D: variable "j"  was declared but never referenced
+  	unsigned char i, j, S;
+..\src\sim808.c(1273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				snprintf(Buffer_tx, sizeof(Buffer_tx), "AT+HTTPPARA=\"URL\",\"%s\"\r", "http://sebazar.ir/api/getData.php");
+..\src\sim808.c(1294): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  							snprintf(Buffer_tx, sizeof(Buffer_tx), "%s\r", "id_1=000001&device_id=000001&date=981103&time_1=133015&latitude_1=38.1043&longitude_1=46.3027&speed_1=1.000001&course_1=230.011236&id_2=000002&time_2=133025&latitude_2=38.1044&longitude_2=46.3028&speed_2=1.000002&course_2=250.011236&id_3=000003&time_3=133235&latitude_3=38.1045&longitude_3=46.3029&speed_3=1.000005&course_3=260.011236&id_4=000004&time_4=133235&latitude_4=38.1045&longitude_4=46.3029&speed_4=1.000007&course_4=270.011236");
+..\src\sim808.c(1316): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_2, "  +HTTPREAD: 28  %s:true %s:true %s:true", Sending_id[0], Sending_id[1], Sending_id[2]);
+..\src\sim808.c(1330): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  										sprintf(Buffer_2, "  +HTTPREAD: 48  %02x%02x%02x%02x%02x:%06s:%s:  OK", Card_ID[0], Card_ID[1], Card_ID[2], Card_ID[3], Card_ID[4], Device_ID, Date);
+..\src\sim808.c(1260): warning:  #177-D: variable "j"  was declared but never referenced
+  	unsigned char i, j, S;
+..\src\sim808.c(1417): warning:  #192-D: unrecognized character escape sequence
+  	while (*buffer++ != '\,');  
+..\src\sim808.c(1419): warning:  #192-D: unrecognized character escape sequence
+  	while (*buffer != '\,')
+..\src\sim808.c(1426): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,')   
+..\src\sim808.c(1433): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,')   
+..\src\sim808.c(1447): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,')   
+..\src\sim808.c(1453): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,');
+..\src\sim808.c(1456): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,')   
+..\src\sim808.c(1463): warning:  #192-D: unrecognized character escape sequence
+  	while (*++buffer != '\,')   
+..\src\sim808.c(1476): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	dUTC_Time=strtold(UTC_Time,NULL);
+..\src\sim808.c(1481): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(UTC_Time,"%d",dUTC_Time);
+..\src\sim808.c(1484): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	dUTC_Date=strtold(UTC_Date,NULL);
+..\src\sim808.c(1486): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	ldbLatitude=strtold(Latitude,NULL);
+..\src\sim808.c(1491): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	snprintf(Latitude,8,"%f",ldbLatitude);
+..\src\sim808.c(1491): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  	snprintf(Latitude,8,"%f",ldbLatitude);
+..\src\sim808.c(1493): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	ldbLongitude=strtold(Longitude,NULL);
+..\src\sim808.c(1498): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	snprintf(Longitude,8,"%f",ldbLongitude);
+..\src\sim808.c(1498): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  	snprintf(Longitude,8,"%f",ldbLongitude);
+..\src\sim808.c(1529): warning:  #192-D: unrecognized character escape sequence
+  		while ((*buffer++ != '\,')&&(timeout--)); //bo qua 7 dau "," dau tien
+..\src\sim808.c(1532): warning:  #192-D: unrecognized character escape sequence
+  	while (*buffer != '\,')
+..\src\sim808.c(1536): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	dbSpeed= strtod(Speed,NULL);
+..\src\sim808.c(1542): warning:  #1-D: last line of file ends without a newline
+  //***********************************************************************
+..\src\sim808.c: 78 warnings, 0 errors
+compiling stm32f4xx_mfrc522.c...
+compiling misc.c...
+compiling SDIO.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_dma.c...
+linking...
+Program Size: Code=90448 RO-data=25464 RW-data=5696 ZI-data=9416  
+FromELF: creating hex file...
+".\OBJ\Security_Alarm_System.axf" - 0 Error(s), 243 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:26
+</pre>
+</body>
+</html>

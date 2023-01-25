@@ -1,0 +1,308 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+I:\Wireless Detectors\Security Alarm System\STM32F4xx simple example\MDK_ARM\STM32F4.uvproj
+Project File Date:  07/21/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\inc\Date_Convert.h(53): warning:  #550-D: variable "j_np" was set but never used
+..\src\main.c(74): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\main.c(82): warning:  #177-D: variable "i" was declared but never referenced
+..\src\main.c(83): warning:  #177-D: variable "txt" was declared but never referenced
+..\src\main.c(84): warning:  #177-D: variable "txt2" was declared but never referenced
+..\src\main.c(86): warning:  #177-D: variable "Dac_out" was declared but never referenced
+..\src\main.c(87): warning:  #177-D: variable "ColorTable" was declared but never referenced
+..\src\main.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\main.c(345): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+compiling delay.c...
+compiling lcd.c...
+..\inc\font.h(544): warning:  #1-D: last line of file ends without a newline
+..\src\lcd.c(1477): warning:  #550-D: variable "font_pixel" was set but never used
+compiling usart.c...
+compiling stm32f4xx_it.c...
+..\src\stm32f4xx_it.c(160): warning:  #223-D: function "SD_ProcessIRQSrc" declared implicitly
+..\src\stm32f4xx_it.c(172): warning:  #223-D: function "SD_ProcessDMAIRQ" declared implicitly
+compiling system_stm32f4xx.c...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_fsmc.c...
+linking...
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol Adc_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol Dac1_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol EXTIX2_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol EXTIX_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol GPIO_Initi (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol RTC_Start (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM10_Int_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM11_Int_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM1_Int_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM2_Int_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM3_Pwm_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM5_Int_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol TIM9_Pwm_Init (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol Wait_Ring (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol f_close (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol f_mount (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol f_open (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol f_read (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol f_write (referred from main.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol SD_ProcessDMAIRQ (referred from stm32f4xx_it.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol SD_ProcessIRQSrc (referred from stm32f4xx_it.o).
+Target not created
+Build target 'Target 1'
+compiling adc.c...
+compiling dac.c...
+compiling dialler.c...
+..\src\dialler.c(175): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\dialler.c(316): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\dialler.c(405): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\dialler.c(479): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\dialler.c(502): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+compiling diskio.c...
+compiling exti.c...
+compiling ff.c...
+compiling gpio.c...
+compiling hs1527.c...
+compiling I2C.c...
+..\src\I2C.c(3): error:  #169: expected a declaration
+..\src\I2C.c(25): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(26): error:  #169: expected a declaration
+..\src\I2C.c(28): error:  #169: expected a declaration
+..\src\I2C.c(53): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(54): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(54): error:  #65: expected a ";"
+..\src\I2C.c(55): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(55): error:  #65: expected a ";"
+..\src\I2C.c(57): error:  #40: expected an identifier
+..\src\I2C.c(57): warning:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(57): error:  #92: identifier-list parameters may only be used in a function definition
+..\src\I2C.c(59): warning:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(59): error:  #92: identifier-list parameters may only be used in a function definition
+..\src\I2C.c(61): warning:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(61): error:  #92: identifier-list parameters may only be used in a function definition
+..\src\I2C.c(62): warning:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(62): error:  #92: identifier-list parameters may only be used in a function definition
+..\src\I2C.c(63): error:  #169: expected a declaration
+..\src\I2C.c(91): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(94): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(94): error:  #20: identifier "I2C_TIMEOUT_MAX" is undefined
+..\src\I2C.c(95): error:  #169: expected a declaration
+..\src\I2C.c(115): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(118): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(118): error:  #148: variable "timeout" has already been initialized
+..\src\I2C.c(119): error:  #169: expected a declaration
+..\src\I2C.c(126): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(129): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(129): error:  #148: variable "timeout" has already been initialized
+..\src\I2C.c(130): error:  #169: expected a declaration
+..\src\I2C.c(137): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(140): error:  #169: expected a declaration
+..\src\I2C.c(141): error:  #169: expected a declaration
+..\src\I2C.c(169): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(172): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(172): error:  #148: variable "timeout" has already been initialized
+..\src\I2C.c(173): error:  #169: expected a declaration
+..\src\I2C.c(194): warning:  #12-D: parsing restarts here after previous syntax error
+..\src\I2C.c(197): error:  #77-D: this declaration has no storage class or type specifier
+..\src\I2C.c(197): error:  #148: variable "timeout" has already been initialized
+..\src\I2C.c(198): error:  #169: expected a declaration
+compiling rtc.c...
+compiling sd_bmp.c...
+..\src\sd_bmp.c(235): warning:  #940-D: missing return statement at end of non-void function "Bmp_Show"
+..\src\sd_bmp.c(126): warning:  #177-D: variable "Code" was declared but never referenced
+compiling sim800.c...
+..\src\sim800.c(154): warning:  #177-D: variable "Buffer" was declared but never referenced
+..\src\sim800.c(395): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(396): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(396): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\src\sim800.c(397): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(414): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(431): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(432): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(433): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(502): warning:  #192-D: unrecognized character escape sequence
+..\src\sim800.c(551): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(551): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(562): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(562): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(574): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(574): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(663): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(672): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(684): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+compiling stm32f4_sdio_low_level_init.c...
+compiling stm32f4_sdio_sd.c...
+compiling tim.c...
+..\src\tim.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(207): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(210): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(275): warning:  #223-D: function "M2Sh" declared implicitly
+..\src\tim.c(129): warning:  #177-D: variable "i" was declared but never referenced
+..\src\tim.c(314): warning:  #177-D: variable "i" was declared but never referenced
+..\src\tim.c(597): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\tim.c(602): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+..\src\tim.c(729): warning:  #223-D: function "SDMMC_Write" declared implicitly
+..\src\tim.c(784): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\src\tim.c(796): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\src\tim.c(800): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_tim.c...
+Target not created
+Build target 'Target 1'
+linking...
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DAC_Cmd (referred from dac.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DAC_Init (referred from dac.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DAC_SetChannel1Data (referred from dac.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol PWR_BackupAccessCmd (referred from rtc.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ClearFlag (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Cmd (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_DeInit (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_FlowControllerConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ITConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Init (referred from stm32f4_sdio_low_level_init.o).
+Target not created
+Build target 'Target 1'
+compiling stm32f4xx_dac.c...
+linking...
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol PWR_BackupAccessCmd (referred from rtc.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ClearFlag (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Cmd (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_DeInit (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_FlowControllerConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ITConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Init (referred from stm32f4_sdio_low_level_init.o).
+Target not created
+Build target 'Target 1'
+compiling stm32f4xx_pwr.c...
+linking...
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ClearFlag (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Cmd (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_DeInit (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_FlowControllerConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_ITConfig (referred from stm32f4_sdio_low_level_init.o).
+.\OBJ\F400Z-LCD2_8.axf: Error: L6218E: Undefined symbol DMA_Init (referred from stm32f4_sdio_low_level_init.o).
+Target not created
+Build target 'Target 1'
+compiling stm32f4xx_dma.c...
+linking...
+Program Size: Code=57616 RO-data=11592 RW-data=1072 ZI-data=4392  
+FromELF: creating hex file...
+".\OBJ\F400Z-LCD2_8.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=57616 RO-data=11592 RW-data=1072 ZI-data=4392  
+FromELF: creating hex file...
+".\OBJ\Security_Alarm_System.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+compiling main.c...
+..\inc\Date_Convert.h(53): warning:  #550-D: variable "j_np" was set but never used
+..\src\main.c(74): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\main.c(82): warning:  #177-D: variable "i" was declared but never referenced
+..\src\main.c(83): warning:  #177-D: variable "txt" was declared but never referenced
+..\src\main.c(84): warning:  #177-D: variable "txt2" was declared but never referenced
+..\src\main.c(86): warning:  #177-D: variable "Dac_out" was declared but never referenced
+..\src\main.c(87): warning:  #177-D: variable "ColorTable" was declared but never referenced
+..\src\main.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\main.c(345): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+assembling startup_stm32f4xx.s...
+compiling delay.c...
+compiling lcd.c...
+..\inc\font.h(544): warning:  #1-D: last line of file ends without a newline
+..\src\lcd.c(1477): warning:  #550-D: variable "font_pixel" was set but never used
+compiling usart.c...
+compiling stm32f4xx_it.c...
+..\src\stm32f4xx_it.c(160): warning:  #223-D: function "SD_ProcessIRQSrc" declared implicitly
+..\src\stm32f4xx_it.c(172): warning:  #223-D: function "SD_ProcessDMAIRQ" declared implicitly
+compiling system_stm32f4xx.c...
+compiling adc.c...
+compiling dac.c...
+compiling dialler.c...
+..\src\dialler.c(175): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\dialler.c(316): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\dialler.c(405): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\dialler.c(479): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\dialler.c(502): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+compiling diskio.c...
+compiling exti.c...
+compiling ff.c...
+compiling gpio.c...
+compiling hs1527.c...
+compiling rtc.c...
+compiling sd_bmp.c...
+..\src\sd_bmp.c(235): warning:  #940-D: missing return statement at end of non-void function "Bmp_Show"
+..\src\sd_bmp.c(126): warning:  #177-D: variable "Code" was declared but never referenced
+compiling sim800.c...
+..\src\sim800.c(154): warning:  #177-D: variable "Buffer" was declared but never referenced
+..\src\sim800.c(395): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(396): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(396): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\src\sim800.c(397): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(414): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(431): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(432): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(433): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\sim800.c(502): warning:  #192-D: unrecognized character escape sequence
+..\src\sim800.c(551): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(551): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(562): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(562): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(574): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(574): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(663): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(672): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+..\src\sim800.c(684): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+compiling stm32f4_sdio_low_level_init.c...
+compiling stm32f4_sdio_sd.c...
+compiling tim.c...
+..\src\tim.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(207): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(210): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\src\tim.c(275): warning:  #223-D: function "M2Sh" declared implicitly
+..\src\tim.c(129): warning:  #177-D: variable "i" was declared but never referenced
+..\src\tim.c(314): warning:  #177-D: variable "i" was declared but never referenced
+..\src\tim.c(597): warning:  #177-D: variable "TimerPeriod" was declared but never referenced
+..\src\tim.c(602): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+..\src\tim.c(729): warning:  #223-D: function "SDMMC_Write" declared implicitly
+..\src\tim.c(784): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\src\tim.c(796): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+..\src\tim.c(800): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_dma.c...
+linking...
+Program Size: Code=57616 RO-data=11592 RW-data=1072 ZI-data=4392  
+FromELF: creating hex file...
+".\OBJ\Security_Alarm_System.axf" - 0 Error(s), 57 Warning(s).

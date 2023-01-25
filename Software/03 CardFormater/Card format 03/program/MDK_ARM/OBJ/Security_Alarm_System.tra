@@ -1,0 +1,53 @@
+*** Creating Trace Output File '.\OBJ\Security_Alarm_System.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\startup_stm32f4xx.o"'
+### List of Objects: adding '".\obj\delay.o"'
+### List of Objects: adding '".\obj\lcd.o"'
+### List of Objects: adding '".\obj\usart.o"'
+### List of Objects: adding '".\obj\stm32f4xx_it.o"'
+### List of Objects: adding '".\obj\system_stm32f4xx.o"'
+### List of Objects: adding '".\obj\adc.o"'
+### List of Objects: adding '".\obj\dac.o"'
+### List of Objects: adding '".\obj\dialler.o"'
+### List of Objects: adding '".\obj\diskio.o"'
+### List of Objects: adding '".\obj\exti.o"'
+### List of Objects: adding '".\obj\ff.o"'
+### List of Objects: adding '".\obj\gpio.o"'
+### List of Objects: adding '".\obj\hs1527.o"'
+### List of Objects: adding '".\obj\rtc.o"'
+### List of Objects: adding '".\obj\sd_bmp.o"'
+### List of Objects: adding '".\obj\sim800.o"'
+### List of Objects: adding '".\obj\stm32f4_sdio_low_level_init.o"'
+### List of Objects: adding '".\obj\stm32f4_sdio_sd.o"'
+### List of Objects: adding '".\obj\tim.o"'
+### List of Objects: adding '".\obj\misc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_usart.o"'
+### List of Objects: adding '".\obj\stm32f4xx_fsmc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_adc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_exti.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rtc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_sdio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_spi.o"'
+### List of Objects: adding '".\obj\stm32f4xx_tim.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dac.o"'
+### List of Objects: adding '".\obj\stm32f4xx_pwr.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dma.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\obj\main.o" ".\obj\startup_stm32f4xx.o" ".\obj\delay.o" ".\obj\lcd.o" ".\obj\usart.o" ".\obj\stm32f4xx_it.o" ".\obj\system_stm32f4xx.o" ".\obj\adc.o" ".\obj\dac.o" ".\obj\dialler.o" ".\obj\diskio.o" ".\obj\exti.o" ".\obj\ff.o" ".\obj\gpio.o" ".\obj\hs1527.o" ".\obj\rtc.o" ".\obj\sd_bmp.o" ".\obj\sim800.o" ".\obj\stm32f4_sdio_low_level_init.o" ".\obj\stm32f4_sdio_sd.o" ".\obj\tim.o" ".\obj\misc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_fsmc.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_exti.o" ".\obj\stm32f4xx_rtc.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_spi.o" ".\obj\stm32f4xx_tim.o" ".\obj\stm32f4xx_dac.o" ".\obj\stm32f4xx_pwr.o" ".\obj\stm32f4xx_dma.o" --strict --scatter ".\OBJ\Security_Alarm_System.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LST\Security_Alarm_System.map" -o ".\OBJ\Security_Alarm_System.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\OBJ\Security_Alarm_System.axf'
+### ADS-LD Command File: '.\OBJ\Security_Alarm_System.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\OBJ\Security_Alarm_System.lnp', Handle=0x00000634
+### Writing '.lnp' file
+### ADS-LD Command file '.\OBJ\Security_Alarm_System.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,163 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: salman ezzati, tp, LIC=YA374-FTIEG-Z8YFH-W2LFE-LB2KW-C3E27
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+I:\Bus meter\Software\03 Card format\Card format 03\program\MDK_ARM\STM32F4.uvproj
+Project File Date:  10/09/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'd:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\inc\Date_Convert.h(53): warning:  #550-D: variable "j_np"  was set but never used
+            unsigned long j_np;
+..\src\main.c(171): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+      sprintf(Buffer_1,"rc=%u FR_%s\n\r", (UINT)rc, str);
+..\src\main.c(261): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%03i", Front_door_card);
+..\src\main.c(264): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Front_door, Buffer_1);
+..\src\main.c(267): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(270): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%03i", Back_door_card);
+..\src\main.c(273): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Back_door, Buffer_1);
+..\src\main.c(276): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(279): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(Buffer_1,"%06i", Daily_operation_amount);			
+..\src\main.c(282): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  			unicode2ascii((char *)Daily_operation, Buffer_1);
+..\src\main.c(285): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  			myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(339): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%03i", Front_door_card);
+..\src\main.c(342): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Front_door, Buffer_1);
+..\src\main.c(345): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(348): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%03i", Back_door_card);
+..\src\main.c(351): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  				unicode2ascii((char *)Back_door, Buffer_1);
+..\src\main.c(354): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(364): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%02i:%02i", RTC_TimeStruct.RTC_Hours, RTC_TimeStruct.RTC_Minutes/*, RTC_TimeStruct.RTC_Seconds*/);
+..\src\main.c(367): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(Buffer_1,"%02i/%02i/%02i", Sh_RTC_Date.RTC_Year/*-1300*/, Sh_RTC_Date.RTC_Month, Sh_RTC_Date.RTC_Date);
+..\src\main.c(375): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Sun, Buffer_1);
+..\src\main.c(380): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Mon, Buffer_1);
+..\src\main.c(385): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Tue, Buffer_1);
+..\src\main.c(390): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Wed, Buffer_1);
+..\src\main.c(395): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Thu, Buffer_1);
+..\src\main.c(400): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Fri, Buffer_1);
+..\src\main.c(405): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  						unicode2ascii((char *)Sat, Buffer_1);
+..\src\main.c(410): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				myLCD_putsf_mix((unsigned char*)Buffer_1, 1);
+..\src\main.c(549): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				strcpy (Buffer_1,"http://sebazar.ir/sebApi/dataDastgah/v2/insertData.php?");
+..\src\main.c(550): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				strcat (Buffer_1,Buffer_2);
+..\src\main.c(550): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  				strcat (Buffer_1,Buffer_2);
+..\src\main.c(569): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  						sprintf(Buffer_1, "%i", Format_write_block_end);
+..\src\main.c(573): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(Buffer_1, "%i", Format_send_block);
+..\src\main.c(750): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 0);
+..\src\main.c(754): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 5000);
+..\src\main.c(758): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 0);
+..\src\main.c(762): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 35000);
+..\src\main.c(766): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 30000);
+..\src\main.c(770): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 5000);
+..\src\main.c(774): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 60000);
+..\src\main.c(778): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(Buffer_1, "%i", 35000);
+..\src\main.c(787): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Device_ID, Buffer_2);
+..\src\main.c(787): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Device_ID, Buffer_2);
+..\src\main.c(792): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_data_counter = strtold(Buffer_2,NULL);
+..\src\main.c(797): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_write_block = strtold(Buffer_2,NULL);
+..\src\main.c(802): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_write_block_end = strtold(Buffer_2,NULL);
+..\src\main.c(807): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Location_send_block = strtold(Buffer_2,NULL);
+..\src\main.c(812): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Format_data_counter = strtold(Buffer_2,NULL);
+..\src\main.c(817): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Format_write_block = strtold(Buffer_2,NULL);
+..\src\main.c(822): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Format_write_block_end = strtold(Buffer_2,NULL);
+..\src\main.c(827): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Format_send_block = strtold(Buffer_2,NULL);
+..\src\main.c(832): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Trip_price = strtold(Buffer_2,NULL);
+..\src\main.c(840): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Temp = strtold(Buffer_2,NULL);
+..\src\main.c(853): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Temp = strtold(Buffer_2,NULL);
+..\src\main.c(863): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	strcpy (Phone_Num_2, Buffer_2);
+..\src\main.c(863): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	strcpy (Phone_Num_2, Buffer_2);
+..\src\main.c(868): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Current_month = strtold(Buffer_2,NULL);
+..\src\main.c(873): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Current_day = strtold(Buffer_2,NULL);
+..\src\main.c(878): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Daily_operation_amount = strtold(Buffer_2,NULL);
+..\src\main.c(883): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Front_door_card = strtold(Buffer_2,NULL);
+..\src\main.c(888): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+  	Back_door_card = strtold(Buffer_2,NULL);
+..\src\main.c(889): warning:  #1-D: last line of file ends without a newline
+  }
+..\src\main.c(158): warning:  #177-D: function "fault_err"  was declared but never referenced
+  static void fault_err (FRESULT rc)
+..\src\main.c: 62 warnings, 0 errors
+linking...
+Program Size: Code=80620 RO-data=24712 RW-data=568 ZI-data=6416  
+FromELF: creating hex file...
+".\OBJ\Security_Alarm_System.axf" - 0 Error(s), 62 Warning(s).
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

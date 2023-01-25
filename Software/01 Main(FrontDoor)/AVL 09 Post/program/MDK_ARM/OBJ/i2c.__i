@@ -1,0 +1,1 @@
+-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\STM32F4xx -I..\STM32F4xx\STM32F4xx_StdPeriph_Driver\inc -I..\ -I..\inc -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DUSE_STDPERIPH_DRIVER -o ".\OBJ\i2c.o" --omf_browse ".\OBJ\i2c.crf" --depend ".\OBJ\i2c.d" "..\src\I2C.c"
